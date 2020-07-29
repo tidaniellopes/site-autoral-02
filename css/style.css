@@ -1,0 +1,471 @@
+*{
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html,body{
+    
+	height: 100%;
+}
+
+.container{
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1100px;
+}
+
+/*Header*/
+
+.clear{
+	clear: both;
+}
+
+header{
+	width: 100%;
+	height: auto;
+}
+
+header .container{
+	padding: 0 2%;
+}
+
+header .logo{
+	width: 120px;
+	height: 120px;
+	border-radius: 60px;
+	float: left;
+	background-image: url('../imagens/logo.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+header nav.menu-desktop{
+	float: right;
+}
+
+header nav.menu-desktop ul{
+	list-style-type: none;
+}
+
+header nav.menu-desktop ul li{
+	float: left;
+	margin-left: 30px;
+	line-height: 125px;
+	font-size: 26px;
+}
+
+header a{
+	color: rgb(255, 103, 154);
+	font-weight: bold;
+	font-style: italic;
+}
+
+/*Mosaico*/
+
+.mosaico-single{
+	float: left;
+	width: calc(100% / 6); /*Divide o tamanho por 6
+	Para todos os sigles se ajustarem dentro do container
+	*/
+}
+
+.img-mosaico-single{
+	width: 100%;
+	padding-top: 100%;
+	background-color: rgb(222, 151, 149);
+	border: 5px solid white;
+	background-position: center;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	/*Substituir por imagens depois */
+}
+
+/*Servicos*/
+
+section.servicos > .container{ /*Pegar apenas o container*/
+	max-width: 800px; /*Limitando o Container para esse valor*/
+	display: flex; /*deita os itens*/
+	align-items: center; /*Alinha os itens na horz*/
+	position: relative; /*Manupular o top*/
+	top: -30px; /*Jogar para cima para sobrepor o mosaico*/
+	text-align: center;
+}
+
+.box-servico{
+	background-image: url('../imagens/bolo-icon-01.png'); /*Dentinho*/
+	background-size: 18px 18px; /*Tamanho do dentinho*/
+	background-position: center calc(100% - 5px); /*Para subir o dentinho */
+	background-repeat: no-repeat;
+
+}
+
+.box-servico h2{
+	color: white;
+	font-weight: normal;
+	font-size: 15px;
+	text-transform: uppercase;
+}	
+
+.box-servico p{
+	color: white;
+	font-weight: normal;
+	margin-top: 8px;
+	font-size: 12px;
+
+}	
+
+.box-servico:nth-of-type(1){/*Manipular a primeira tag .box-servico*/
+	width: 30%;
+	padding: 30px 2%;
+	background-color:  rgb(255, 103, 154);
+	
+}
+
+.box-servico:nth-of-type(2){ /*Manipular a segunda tag .box-servico*/
+	width: 40%;
+	padding: 45px 2%;
+	background-color:rgb(222, 151, 149);
+	background-image: none; /*Sem dentinho no meio */
+}
+
+.box-servico:nth-of-type(3){/*Manipular a terceira tag .box-servico*/
+	width: 30%;
+	padding: 30px 2%;
+	background-color:  rgb(255, 103, 154);
+}
+
+/*Sobre o casal*/
+
+.perfil-container {/*REVISAR */
+	padding: 10px 0 40px 0;
+}
+
+.perfil-container .container{/*REVISAR */
+
+	max-width: 800px;
+}
+
+.perfil-wraper{/*REVISAR */
+
+	padding-top:60%;
+	position: relative;
+}
+
+.perfil-wraper2{/*REVISAR */
+	position: absolute;
+	top:0;
+	left:0;
+	display: flex;
+	width: 100%;
+	height: 100%;
+
+}
+
+.img-perfil{/*REVISAR */
+
+	width: 40%;
+	height: 100%;
+	background-image: url('../imagens/img_perfil.png');
+	background-size: cover;
+	background-position: left;
+	background-repeat: no-repeat;
+	
+}
+
+.text-perfil{/*REVISAR */
+	padding: 0 30px;
+	width: 60%;
+
+}
+
+.text-perfil h2{
+	font-size:18px;
+	color: rgb(255, 103, 154);
+}
+
+.text-perfil p{
+	color: #4b4b4b;
+	font-size: 14px;
+	margin-top: 12px;
+	text-align: justify;
+}
+
+/*Cardapio*/
+
+.cardapio > h2{
+	font-size: 25px;
+	text-align: center;
+	color:rgb(222, 151, 149);
+
+}
+
+.cardapio .container{
+	padding: 50px 0;
+}
+
+.cardapio-container{
+	float: left;/*Posicionamento à esquerda*/
+	width: 33.3%; /*Divide em 3 as colunas*/
+}
+
+.cardapio-single{
+	padding: 20px;
+
+}
+
+.cardapio-single h2{
+	font-size: 18px;
+	color:rgb(255, 103, 154);
+	text-align: center;	
+}
+
+.cardapio-single p{
+	margin: 10px 0;
+	font-size:13px;
+	color:rgb(222, 151, 149);
+	text-align: justify;
+}
+
+/*Depoimentos*/
+.depoimentos > h2{
+	font-size: 18px;
+	color:#737373;
+	text-align: center;	
+}
+
+.depoimentos > .container{
+	padding: 40px 0;
+	max-width: 400px;
+}
+
+.depoimentos .depoimento-single{
+	text-align: center;
+	width: 100%;
+	padding: 0 2%;
+}
+
+.depoimento-single quote{
+	font-size: 15px;
+	color: #b4b4b4;
+}
+
+.depoimento-single .nome-depoimento{
+	padding: 19px 0;
+}
+
+.nome-depoimento img{
+	/*Para deixar e img redonda, basta colocar
+	o width e o height iguais e o border radios
+	dividido por dos dois.*/
+	width: 32px;
+	height: 32px;
+	border-radius: 16px; /*Metade */
+}
+
+.nome-depoimento span{
+	position: relative;
+	top: 6px;
+	color:#b4b4b4;
+	font-size: 13px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+/*Social*/
+
+.chamada{
+
+	float: left;
+	width: 100%;
+	text-align: center;
+	padding: 20px 0;
+	background-color: rgb(222, 151, 149);
+
+}
+
+/*Instagram*/
+.instagram-chamada{
+	float: left;
+	width: 50%;
+	text-align: center;
+	padding: 40px 0;
+	background-color: rgb(222, 151, 149);
+	
+
+}
+
+.instagram-chamada p{
+	line-height: 20px; /*Não sei para que serve*/
+	margin: 10px 0;
+	color: white;
+	font-size: 13px;
+
+}
+
+/*Whatsapp*/
+.whatsApp-chamada{
+	float: right;
+	width: 50%;
+	text-align: center;
+	padding: 40px 0;
+	background-color:rgb(222, 151, 149);
+
+}
+
+.whatsApp-chamada p{
+	line-height: 20px; /*Não sei para que serve*/
+	margin: 10px 0;
+	color: white;
+	font-size: 13px;
+
+}
+
+/*Single*/
+
+.mosaico-social{
+	float: left;
+	width: 100%;
+}
+
+.img-mosaico-single-social{
+	float: left;
+	/*Como as imagens são quadradas, a altura e a largura
+	são iguais.*/
+	width: calc(100% / 9); /*100% dividido por 9*/
+	padding-top:calc(100% / 9); /*100% dividido por 9*/
+	/**/
+	background-color: #ccc;
+	border:6px solid white;
+}
+
+/*Footer*/
+
+footer{
+	padding: 40px 2%;
+	background-color: rgb(222, 151, 149);
+
+}
+
+footer .container{
+	max-width: 1100px;
+
+}
+
+footer .footer-block{
+	float: left;
+	width: 33.3%;
+}
+
+.footer-block h2{
+	color:white;
+	font-weight: normal;
+	font-size: 18px;
+}
+
+footer p{
+	color:white;
+	font-size: 14px;
+	margin-top: 8px;
+}
+
+/*Responsivo*/
+
+@media screen and (max-width: 1024px){
+	.img-mosaico-single-social{
+	/*Como as imagens são quadradas, a altura e a largura
+	são iguais.*/
+	width: calc(100% / 6); /*100% dividido por 9*/
+	padding-top:calc(100% / 6); /*100% dividido por 9*/
+	/**/
+	}
+
+	.mosaico-social > div:nth-of-type(1n + 7){ /*Ocultar 
+		7 em diante */
+		display: none;
+	}
+
+}
+
+@media screen and (max-width: 768px){
+
+	.img-mosaico-single-social{
+	/*Como as imagens são quadradas, a altura e a largura
+	são iguais.*/
+	width: calc(100% / 3); /*100% dividido por 9*/
+	padding-top:calc(100% / 3); /*100% dividido por 9*/
+	/**/
+	}
+
+	.mosaico-social > div:nth-of-type(1n + 4){ /* 
+		4 em diante */
+		display: none;
+	}
+
+	section.servicos > .container{ 
+		
+		flex-direction: column; /*Alinhamento vertical */ 
+	}
+
+	.box-servico:nth-of-type(1){/*Manipular a primeira tag .box-servico*/
+		width: 90%;
+		max-width: 560px;
+	
+	}
+
+	.box-servico:nth-of-type(2){ /*Manipular a segunda tag .box-servico*/
+		width: 95%;
+		max-width: 600px;
+	}	
+
+	.box-servico:nth-of-type(3){/*Manipular a terceira tag .box-servico*/
+		width: 90%;
+		max-width: 560px;
+
+	}
+
+	.perfil-wraper{
+		padding-top: 0; /*Tira posicionamento quando apli-
+		camos o position static no filho */
+	}
+
+	.perfil-wraper2{ /*REVISAR */
+		text-align: center;
+		display: inline-block;
+		/*tirando o display:flex; e a position absolute
+		a próxima sessãobuga */
+		/*Para arrumar colocamos */
+		height: auto;
+		position: static;
+		/*Vai gerar um erro de posicionamento, basta co-
+		locar um padding-top:0; no pai (perfil-wraper)
+		. Acima*/
+
+	}
+
+	.img-perfil{ /*REVISAR */
+		width: 60%;
+		display: inline-block;
+		padding-top: 50%;
+		height: auto; 
+
+	}
+
+	.text-perfil{ /*REVISAR */
+		display: inline-block;
+		width: 100%;
+		padding: 0 30px;
+	}
+
+}
+
+@media screen and (max-width: 580px){
+	.img-perfil{
+		width: 80%;
+		padding-top: 70%;
+
+	}
+
+}
