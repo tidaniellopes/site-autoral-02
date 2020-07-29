@@ -11,6 +11,7 @@ html,body{
 }
 
 .container{
+	padding: 0 2%;
 	margin: 0 auto;
 	width: 100%;
 	max-width: 1100px;
@@ -67,6 +68,18 @@ header nav.menu-desktop a{
 	text-decoration: none;
 }
 
+#menu{
+	display: none;
+	width: 30px;
+	height:30px;
+	background-image: url('../imagens/menu.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	float: right;
+	margin: 10px;
+}
+
 /*Mobile*/
 
 header nav.menu-mobile{
@@ -84,8 +97,8 @@ header nav.menu-mobile ul li{
 	border: 1px solid rgb(255, 103, 154);
 	float: none;
 	text-align: center;
-	line-height: 80px;
-	font-size: 20px;
+	line-height: 40px;
+	font-size: 16px;
 	margin: 0 auto;
 	border-bottom: none;
 }
@@ -468,9 +481,10 @@ footer p{
 
 @media screen and (max-width: 768px){
 
-	header nav.menu-mobile{
-		display: block;
+	#menu{
+		display: inline;
 	}
+
 
 	.menu-desktop{
 		display: none;
@@ -605,16 +619,6 @@ footer p{
 		width: 100%;
 		text-align: center;
 	}
-
-	/* footer{
-		padding: 40px 2%;
-		background-color: rgb(222, 151, 149);
-	}
-	
-	footer .container{
-		max-width: 1100px;
-	
-	} */
 	
 	footer .footer-block{
 		float: none;
