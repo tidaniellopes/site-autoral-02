@@ -22,9 +22,12 @@ html,body{
 	clear: both;
 }
 
-header{
+header {
 	width: 100%;
 	height: auto;
+	
+	background-color: white;
+	
 }
 
 header .container{
@@ -57,11 +60,48 @@ header nav.menu-desktop ul li{
 	font-size: 26px;
 }
 
-header a{
+header nav.menu-desktop a{
 	color: rgb(255, 103, 154);
 	font-weight: bold;
 	font-style: italic;
+	text-decoration: none;
 }
+
+/*Mobile*/
+
+header nav.menu-mobile{
+	display: none;
+	float: none;
+	width: 100%;
+}
+
+header nav.menu-mobile ul{
+	list-style-type: none;
+}
+
+header nav.menu-mobile ul li{
+	width: 100%;
+	border: 1px solid rgb(255, 103, 154);
+	float: none;
+	text-align: center;
+	line-height: 80px;
+	font-size: 20px;
+	margin: 0 auto;
+	border-bottom: none;
+}
+
+header nav.menu-mobile a{
+	color: rgb(222, 151, 149);
+	font-weight: bold;
+	font-style: italic;
+	text-decoration: none;
+}
+
+nav.menu-mobile ul li:nth-last-child(1	){
+	border-bottom: 1px solid rgb(255, 103, 154);
+
+}
+
 
 /*Mosaico*/
 
@@ -195,25 +235,22 @@ section.servicos > .container{ /*Pegar apenas o container*/
 
 /*Cardapio*/
 
+.cardapio{
+	padding: 90px 2% 0px 2%;
+}
+
 .cardapio > h2{
 	font-size: 25px;
 	text-align: center;
 	color:rgb(222, 151, 149);
-
-}
-
-.cardapio .container{
-	padding: 50px 0;
+	padding-bottom:90px;
 }
 
 .cardapio-container{
 	float: left;/*Posicionamento à esquerda*/
 	width: 33.3%; /*Divide em 3 as colunas*/
-}
-
-.cardapio-single{
-	padding: 20px;
-
+	min-height: 200px;
+	padding: 0 2%;
 }
 
 .cardapio-single h2{
@@ -230,6 +267,11 @@ section.servicos > .container{ /*Pegar apenas o container*/
 }
 
 /*Depoimentos*/
+
+.depoimentos{
+	padding:50px 0;
+}
+
 .depoimentos > h2{
 	font-size: 18px;
 	color:#737373;
@@ -293,8 +335,6 @@ section.servicos > .container{ /*Pegar apenas o container*/
 	text-align: center;
 	padding: 40px 0;
 	background-color: rgb(222, 151, 149);
-	
-
 }
 
 .instagram-chamada p{
@@ -335,10 +375,22 @@ section.servicos > .container{ /*Pegar apenas o container*/
 	/*Como as imagens são quadradas, a altura e a largura
 	são iguais.*/
 	width: calc(100% / 9); /*100% dividido por 9*/
-	padding-top:calc(100% / 9); /*100% dividido por 9*/
+	padding: 0 auto;
 	/**/
-	background-color: #ccc;
 	border:6px solid white;
+
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.img-mosaico{
+	width: 100%;
+	height: 200px;
+	background-image: url('../imagens/inst1.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
 }
 
 /*Footer*/
@@ -375,10 +427,11 @@ footer p{
 
 @media screen and (max-width: 1024px){
 	.img-mosaico-single-social{
+
 	/*Como as imagens são quadradas, a altura e a largura
 	são iguais.*/
 	width: calc(100% / 6); /*100% dividido por 9*/
-	padding-top:calc(100% / 6); /*100% dividido por 9*/
+	
 	/**/
 	}
 
@@ -387,20 +440,45 @@ footer p{
 		display: none;
 	}
 
+	header nav.menu-desktop ul li{
+		font-size: 20px;
+	}
+
+	.cardapio-container{
+		margin: 0 auto;
+		width: 50%; /*Divide em 3 as colunas*/
+	}
+
+	.cardapio-container:nth-last-of-type(2){
+		margin: 0 auto;
+		float: none;
+	}
 }
 
 @media screen and (max-width: 768px){
+
+	header nav.menu-mobile{
+		display: block;
+	}
+
+	.menu-desktop{
+		display: none;
+	}
+
+	header .logo{
+		float: none;
+		margin: 0 auto;
+	}
 
 	.img-mosaico-single-social{
 	/*Como as imagens são quadradas, a altura e a largura
 	são iguais.*/
 	width: calc(100% / 3); /*100% dividido por 9*/
-	padding-top:calc(100% / 3); /*100% dividido por 9*/
+	
 	/**/
 	}
 
-	.mosaico-social > div:nth-of-type(1n + 4){ /* 
-		4 em diante */
+	.mosaico-social > div:nth-of-type(1n + 4){
 		display: none;
 	}
 
@@ -431,6 +509,12 @@ footer p{
 		camos o position static no filho */
 	}
 
+	.text-perfil h2{
+		font-size:18px;
+		color: rgb(255, 103, 154);
+		padding: 40px 0;
+	}
+
 	.perfil-wraper2{ /*REVISAR */
 		text-align: center;
 		display: inline-block;
@@ -459,6 +543,62 @@ footer p{
 		padding: 0 30px;
 	}
 
+	section.servicos > .container{ /*Pegar apenas o container*/
+		top: -12px; /*Jogar para cima para sobrepor o mosaico*/
+		
+	}
+
+	.cardapio > h2{
+		font-size: 25px;
+		text-align: center;
+		color:rgb(222, 151, 149);
+		padding:30px 2% 50px 2%;
+	}
+
+	.cardapio .container{
+		padding: 20px 0;
+	}
+
+	.cardapio-container{
+		margin: 0 auto;
+		width: 100%; /*Divide em 3 as colunas*/
+		float: none;
+		max-width: 500px;
+		height: 100px;
+	
+	}
+
+	.cardapio-container:nth-last-of-type(2){
+		width: 100%;
+		margin: 0 auto;
+		float: none;
+	}
+	
+	.cardapio{
+		padding: 0px 2%;
+	}
+
+	.depoimentos{
+		padding:20px 0;
+	}
+
+	.whatsApp-chamada{
+		float: none;
+		width: 100%;
+		text-align: center;
+	
+	}
+
+	.instagram-chamada{
+		float: none;
+		width: 100%;
+		text-align: center;
+	}
+	
+
+
+
+	
 }
 
 @media screen and (max-width: 580px){

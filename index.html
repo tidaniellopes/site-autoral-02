@@ -12,8 +12,9 @@
     <link rel="stylesheet" type="text/css" href="css/js-socials/jssocials.css"/>
     <link rel="stylesheet" type="text/css" href="css/js-socials/jssocials-theme-flat.css"/>
     <!--Fancy-box-->
-    <link rel="stylesheet" type="text/css" href="css/fancy-box/jquery.fancybox.css"
-    <!----------->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+    <!---->
+
 	<meta name="author" content="DanielLopes">
 	<meta name="keywords" content="palavras,chaves,por,
 	virgula">
@@ -29,90 +30,100 @@
             <div class="logo"></div><!--logo-->
             <nav class="menu-desktop">
                 <ul>
-                    <li><a>Home</a></li>
-                    <li><a>Cursos</a></li>
-                    <li><a>Sobre</a></li>
-                    <li><a>Contato</a></li>
+                    <li><a class="galeria" href="#galeria">Galeria</a></li>
+                    <li><a class="perfil" href="#perfil">Perfil</a></li>
+                    <li><a class="cardapio" href="#cardapio">Cardapio</a></li>
+                    <li><a class="depoimentos" href="#depoimentos">Depoimentos</a></li>
+                    <li><a class="contato" href="#contato">Contato</a></li>
                 </ul>
-            </nav>
+            </nav><!--menu-desktop-->
+
+            <nav class="menu-mobile">
+                <ul>
+                    <li><a class="galeria" href="#galeria">Galeria</a></li>
+                    <li><a class="perfil" href="#perfil">Perfil</a></li>
+                    <li><a class="cardapio" href="#cardapio">Cardapio</a></li>
+                    <li><a class="contato" href="#contato">Contato</a></li>
+                </ul>
+            </nav><!--menu-desktop-->
         </div><!--container-->
         <div class="clear"></div><!--clear-->
     </header>
-
-    <section class="mosaico">
+    
+    <section  id="galeria" target="galeria"  class="mosaico">
 		<div class="container">
 			<div class="mosaico-wraper">
-				 <!-------------------------->
-				 <div class="mosaico-single">
-                     <div class="img-mosaico-single" style="background-image: url('imagens/bolo01.jpg');"></div><!--img-mosaico-single-->
-				 </div><!--mosaico-single-->
-				 <!-------------------------->
-				 <div class="mosaico-single">
-				 	<div class="img-mosaico-single" style="background-image: url('imagens/bolo02.jpg');"></div><!--img-mosaico-single-->
-				 </div><!--mosaico-single-->
-				 <!-------------------------->
-				 <div class="mosaico-single">
-				 	<div class="img-mosaico-single" style="background-image: url('imagens/bolo03.jpg');"></div><!--img-mosaico-single-->
-				 </div><!--mosaico-single-->
-				 <!-------------------------->
-				 <div class="mosaico-single">
-				 	<div class="img-mosaico-single" style="background-image: url('imagens/bolo04.jpg');"></div><!--img-mosaico-single-->
-				 </div><!--mosaico-single-->
-				 <!-------------------------->
-				 <div class="mosaico-single">
-				 	<div class="img-mosaico-single" style="background-image: url('imagens/bolo05.jpg');"></div><!--img-mosaico-single-->
-				 </div><!--mosaico-single-->
-				 <!-------------------------->
-				 <div class="mosaico-single">
-				 	<div class="img-mosaico-single" style="background-image: url('imagens/bolo06.jpg');"></div><!--img-mosaico-single-->
-                 </div><!--mosaico-single-->
-                 <!-------------------------->
-				 <div class="mosaico-single">
+                 
+				<div class="mosaico-single" data-fancybox="gallery" href="imagens/bolo01.jpg">
+                    <div class="img-mosaico-single" style="background-image: url('imagens/bolo01.jpg');"></div><!--img-mosaico-single-->
+                </div><!--mosaico-single-->
+
+                <div class="mosaico-single" data-fancybox="gallery" href="imagens/bolo02.jpg">
+                    <div class="img-mosaico-single" style="background-image: url('imagens/bolo02.jpg');"></div><!--img-mosaico-single-->
+                </div><!--mosaico-single-->
+
+                <div class="mosaico-single" data-fancybox="gallery" href="imagens/bolo03.jpg">
+                    <div class="img-mosaico-single" style="background-image: url('imagens/bolo03.jpg');"></div><!--img-mosaico-single-->
+                </div><!--mosaico-single-->
+
+                <div class="mosaico-single" data-fancybox="gallery" href="imagens/bolo04.jpg">
+                    <div class="img-mosaico-single" style="background-image: url('imagens/bolo04.jpg');"></div><!--img-mosaico-single-->
+                </div><!--mosaico-single-->
+
+                <div class="mosaico-single" data-fancybox="gallery" href="imagens/bolo05.jpg">
+                    <div class="img-mosaico-single" style="background-image: url('imagens/bolo05.jpg');"></div><!--img-mosaico-single-->
+                </div><!--mosaico-single-->
+
+                <div class="mosaico-single" data-fancybox="gallery" href="imagens/bolo06.jpg">
+                    <div class="img-mosaico-single" style="background-image: url('imagens/bolo06.jpg');"></div><!--img-mosaico-single-->
+                </div><!--mosaico-single-->
+
+                <div class="mosaico-single" data-fancybox="gallery" href="imagens/bolo07.jpg">
                     <div class="img-mosaico-single" style="background-image: url('imagens/bolo07.jpg');"></div><!--img-mosaico-single-->
                 </div><!--mosaico-single-->
-                <!-------------------------->
-				 <div class="mosaico-single">
+
+                <div class="mosaico-single" data-fancybox="gallery" href="imagens/bolo08.jpg">
                     <div class="img-mosaico-single" style="background-image: url('imagens/bolo08.jpg');"></div><!--img-mosaico-single-->
                 </div><!--mosaico-single-->
-                <!-------------------------->
-				 <div class="mosaico-single">
+
+                <div class="mosaico-single" data-fancybox="gallery" href="imagens/bolo09.jpg">
                     <div class="img-mosaico-single" style="background-image: url('imagens/bolo09.jpg');"></div><!--img-mosaico-single-->
                 </div><!--mosaico-single-->
-                <!-------------------------->
-				 <div class="mosaico-single">
+
+                <div class="mosaico-single" data-fancybox="gallery" href="imagens/bolo10.jpg">
                     <div class="img-mosaico-single" style="background-image: url('imagens/bolo10.jpg');"></div><!--img-mosaico-single-->
                 </div><!--mosaico-single-->
-                <!-------------------------->
-				 <div class="mosaico-single">
-                    <div class="img-mosaico-single" style="background-image: url('imagens/bolo10.jpg');"></div><!--img-mosaico-single-->
-                </div><!--mosaico-single-->
-                <!-------------------------->
-				 <div class="mosaico-single">
+
+                <div class="mosaico-single" data-fancybox="gallery" href="imagens/bolo11.jpg">
                     <div class="img-mosaico-single" style="background-image: url('imagens/bolo11.jpg');"></div><!--img-mosaico-single-->
                 </div><!--mosaico-single-->
-				 <!-------------------------->
+
+                <div class="mosaico-single" data-fancybox="gallery" href="imagens/bolo12.jpg">
+                    <div class="img-mosaico-single" style="background-image: url('imagens/bolo12.jpg');"></div><!--img-mosaico-single-->
+                </div><!--mosaico-single-->
+
 				
 			</div><!--mosaico-wraper-->
 		</div><!--Container-->
-    </section><!--mosaico-->
-    
-    <section class="servicos">
+    </section>
+
+    <section target="perfil" class="servicos">
 		<div class="container">
 			
-			<div class="box-servico">
-				<h2>Lorem Ipsum</h2>
+			<div id="perfil" class="box-servico">
+				<h2>Bruna Gomes</h2>
 				<p>Lorem Ipsum dolor sit amet, consectetur adipscing elit.
 				Mayris ullamcorper</p>
 			</div><!--box-servico-->
 
 			<div class="box-servico">
-				<h2>Lorem Ipsum</h2>
+				<h2>Casamento no pote</h2>
 				<p>Lorem Ipsum dolor sit amet, consectetur adipscing elit.
 				Mayris ullamcorper</p>
 			</div><!--box-servico-->
 
 			<div class="box-servico">
-				<h2>Lorem Ipsum</h2>
+				<h2>Matheus Knelas</h2>
 				<p>Lorem Ipsum dolor sit amet, consectetur adipscing elit.
 				Mayris ullamcorper</p>
 			</div><!--box-servico-->
@@ -120,7 +131,7 @@
 		</div><!--container-->
     </section><!--servicos-->
     
-    <section class="perfil-container">
+    <section  class="perfil-container">
 		<div class="container">
 			<div class="perfil-wraper">
 				<div class="perfil-wraper2">
@@ -137,7 +148,7 @@
 
     </section><!--perfil container-->
     
-    <section class="cardapio">
+    <section target="cardapio" id="cardapio" class="cardapio">
 		<h2>Cardápio</h2>
 		<div class="container">
 
@@ -166,7 +177,7 @@
 		</div><!--container-->
     </section><!--Cardapio-->
     
-    <section class="depoimentos">
+    <section target="depoimentos" id="depoimentos" class="depoimentos">
 		<h2>Depoimentos</h2>
 		<div class="container">
 			<div class="depoimento-single">
@@ -176,10 +187,11 @@
 					<span>Daniel Vinicius Lopes </span>
 				</div><!--nome-depoimento-->
             </div><!--depoimentos-single-->
-		</div><!--container-->
+        </div><!--container-->
+        <div class="clear"></div>
     </section><!--depoimentos-->
     
-    <section class="social"> 
+    <section target="contato" id="contato" class="social"> 
 
         <div class="chamada">
             <div class="instagram-chamada">
@@ -196,20 +208,45 @@
 
         </div><!--chamada-->
 
+		<div target="galeria-social" class="mosaico-social">
 
-		
-		
+            <div data-fancybox="gallery-02" class="img-mosaico-single-social" href="imagens/inst2.jpg" >
+                <div class="img-mosaico" style="background-image: url('imagens/inst2.jpg');"></div>
+            </div>
 
-		<div class="mosaico-social">
-			<div class="img-mosaico-single-social">1</div><!--img-mosaico-single-social-->
-			<div class="img-mosaico-single-social">2</div><!--img-mosaico-single-social-->
-			<div class="img-mosaico-single-social">3</div><!--img-mosaico-single-social-->
-			<div class="img-mosaico-single-social">4</div><!--img-mosaico-single-social-->
-			<div class="img-mosaico-single-social">5</div><!--img-mosaico-single-social-->
-			<div class="img-mosaico-single-social">6</div><!--img-mosaico-single-social-->
-			<div class="img-mosaico-single-social">7</div><!--img-mosaico-single-social-->
-			<div class="img-mosaico-single-social">8</div><!--img-mosaico-single-social-->
-			<div class="img-mosaico-single-social">9</div><!--img-mosaico-single-social-->
+            <div data-fancybox="gallery-02" class="img-mosaico-single-social" href="imagens/inst1.jpg" >
+                <div class="img-mosaico" style="background-image: url('imagens/inst1.jpg');"></div>
+            </div>
+
+            <div data-fancybox="gallery-02" class="img-mosaico-single-social" href="imagens/inst4.jpg" >
+                <div class="img-mosaico" style="background-image: url('imagens/inst4.jpg');"></div>
+            </div>
+
+            <div data-fancybox="gallery-02" class="img-mosaico-single-social" href="imagens/inst3.jpg" >
+                <div class="img-mosaico" style="background-image: url('imagens/inst3.jpg');"></div>
+            </div>
+
+            <div data-fancybox="gallery-02" class="img-mosaico-single-social" href="imagens/inst6.jpg" >
+                <div class="img-mosaico" style="background-image: url('imagens/inst6.jpg');"></div>
+            </div>
+
+            <div data-fancybox="gallery-02" class="img-mosaico-single-social" href="imagens/inst5.jpg" >
+                <div class="img-mosaico" style="background-image: url('imagens/inst5.jpg');"></div>
+            </div>
+
+            <div data-fancybox="gallery-02" class="img-mosaico-single-social" href="imagens/inst8.jpg" >
+                <div class="img-mosaico" style="background-image: url('imagens/inst8.jpg');"></div>
+            </div>
+
+            <div data-fancybox="gallery-02" class="img-mosaico-single-social" href="imagens/inst7.jpg" >
+                <div class="img-mosaico" style="background-image: url('imagens/inst7.jpg');"></div>
+            </div>
+
+            <div data-fancybox="gallery-02" class="img-mosaico-single-social" href="imagens/inst9.jpg" >
+                <div class="img-mosaico" style="background-image: url('imagens/inst9.jpg');"></div>
+            </div>
+            
+
 		</div><!--mosaico-social-->
 
 
@@ -245,12 +282,13 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="js/scripts.js"></script>
     <!--plugins-->
+    <!-- <script src="js/menuScroll.js"></script> -->
     <!--js-socials-->
     <script src="js/js-socials/jquery.jssocials.js"></script>
     <!--js-mask-->
     <script src="js/mask/jquery.mask.js"></script>
     <!--Fancy-box-->
-    <script src="js/fancy-box/jquery.fancybox.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     
 </body>
 
