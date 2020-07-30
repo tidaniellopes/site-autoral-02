@@ -60,8 +60,3 @@ $(function(){
         //Cria um índice, a cada indice ele coloca uma cor e um texto nessa sessão.
    
 })
-
-/*
-
-
-*/
